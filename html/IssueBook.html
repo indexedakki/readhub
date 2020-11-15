@@ -1,0 +1,61 @@
+
+<!DOCTYPE HTML>
+<html>
+<body>
+<center><h2>Simple Library Management System</h2></center>
+<style type="text/css">
+    *
+    body{
+        background-image: url('https://edustaff.co.za/wp-content/uploads/2020/05/book-background-hd-1280x854-128880.jpg');
+        background-size: cover;
+    }
+</style>
+
+<!--Once the form is submitted, all the form data is forwarded to InsertBooks.php -->
+<div class="main">
+    <form class="#" method="POST" action='/postIssueBook' onsubmit="myfunction()">
+        <div class="col-xs-12">
+            <div class="styled-input wide">
+                <h4 style="text-align:center"><label for="Name">Name</label></h4>
+            
+                <h4 style="text-align:center"><input type="text" id="Name" name="Name" /></h4>
+            </div>
+        </div>
+
+        <table border="2" align="center" cellpadding="5" cellspacing="5">
+            <tr>
+                <td> Enter ISBN :</td>
+                    <td> <input type="text" name="ISBN" size="48"> </td>
+            </tr>
+            <tr>
+                <td> Enter Title :</td>
+                    <td> <input type="text" name="Title" size="48"> </td>
+            </tr>
+            <tr>
+                <td> Enter Author :</td>
+                    <td> <input type="text" name="Author" size="48"> </td>
+            </tr>
+            <tr>
+                <td> Enter Edition :</td>
+                    <td> <input type="text" name="Edition" size="48"> </td>
+            </tr>
+            <tr>
+                <td> Enter Email: </td>
+                    <td> <input type="text" name="Email" size="48"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn">Submit</button>
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+        <script>
+        function myfunction() {
+        alert("Your book will be issued to your given email");
+        }
+        </script>
+</div>
+</body>
+</html>
