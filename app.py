@@ -36,13 +36,13 @@ app.config.update(
     MAIL_USERNAME = 'gesouraus69@gmail.com',
     MAIL_PASSWORD = 'oclodusGe69'
 )
-mail = Mail(flask_app)
+mail = Mail(app)
 
-db.init_app(flask_app)
+db.init_app(app)
 
 login_manager = LoginManager()
 login_manager.login_view = 'login'
-login_manager.init_app(flask_app)
+login_manager.init_app(app)
 
 
 @login_manager.user_loader
