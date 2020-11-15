@@ -18,18 +18,18 @@ from wtforms import ValidationError
 from flask_mail import Mail,  Message
 
 
-flask_app = Flask(__name__, template_folder='html')
+app = Flask(__name__, template_folder='html')
 #Bootstrap(flask_app)
-flask_app.config['SECRET_KEY'] = '9OLWxND4o83j4K4iuopO'
-flask_app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/data.db'
-flask_app.config['SQLALCHEMY_BINDS'] = {
+app.config['SECRET_KEY'] = '9OLWxND4o83j4K4iuopO'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/data.db'
+app.config['SQLALCHEMY_BINDS'] = {
     'contact': 'sqlite:///database/contact.db',
     'issuebook': 'sqlite:///database/issuebook.db'
                                        }
-flask_app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
-flask_app.config.update(
+app.config.update(
     MAIL_SERVER='smtp.gmail.com',
     MAIL_PORT=587,
     MAIL_USE_TLS=True,
@@ -55,15 +55,15 @@ def load_user(user_id):
 Routes
 """
 
-@flask_app.before_first_request
+@app.before_first_request
 def create_tables():
     db.create_all()
 
-@flask_app.route('/')
+@app.route('/')
 def Contact():
     return render_template('SignupPage.html')
 
-@flask_app.route('/SignupPagePost', methods=['GET','POST'])
+@app.route('/SignupPagePost', methods=['GET','POST'])
 def signup_post():
     Name = request.form.get('Name')
     Email = request.form.get('Email')
@@ -86,16 +86,16 @@ def signup_post():
     print("form Submitted")
     return render_template('blank3.html')
 
-@flask_app.route('/LoginPagePre')
+@app.route('/LoginPagePre')
 def login_pre():
     return render_template("/Loginpage.html")
 
 
-@flask_app.route('/SignupPagePre')
+@app.route('/SignupPagePre')
 def NewUser():
     return render_template("/SignupPage.html")
 
-@flask_app.route('/LoginPagePost', methods=['GET','POST'])
+@app.route('/LoginPagePost', methods=['GET','POST'])
 def login_post():
     Email = request.form.get('Email')
     Password = request.form.get('Password')
@@ -115,11 +115,11 @@ def login_post():
     return render_template("home.html")
 
 
-@flask_app.route('/Contact')
+@app.route('/Contact')
 def preContact():
     return render_template('Contact.html')
 
-@flask_app.route('/postContact', methods=['POST'])
+@app.route('/postContact', methods=['POST'])
 def postContact():
     if request.method == 'POST':
         Name = request.form.get('Name')
@@ -146,11 +146,11 @@ def postContact():
         # db.session.commit()
         # return render_template('Contact.html')
 
-@flask_app.route('/preIssueBook')
+@app.route('/preIssueBook')
 def preIssueBook():
     return render_template('IssueBook.html')
 
-@flask_app.route('/postIssueBook', methods=['POST'])
+@app.route('/postIssueBook', methods=['POST'])
 def postIssueBook():
     if request.method == 'POST':
         # print("taking input")
@@ -182,11 +182,11 @@ def postIssueBook():
 #     )
 #     return render_template('blank4.html')
 
-@flask_app.route('/home')
+@app.route('/home')
 def homepage():
     return render_template('home.html')
 
-@flask_app.route('/logout')
+@app.route('/logout')
 @login_required
 def logout():
     logout_user()
@@ -194,4 +194,4 @@ def logout():
 
 
 if __name__ == '__main__':
-    flask_app.run(debug = False)
+    app.run(debug = False)
