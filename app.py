@@ -88,7 +88,7 @@ def signup_post():
 
 @app.route('/LoginPagePre')
 def login_pre():
-    return render_template("/Loginpage.html")
+    return render_template("/LoginPage.html")
 
 
 @app.route('/SignupPagePre')
