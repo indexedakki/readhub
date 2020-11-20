@@ -21,7 +21,7 @@ from flask_mail import Mail,  Message
 app = Flask(__name__, template_folder='html')
 #Bootstrap(flask_app)
 app.config['SECRET_KEY'] = '9OLWxND4o83j4K4iuopO'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/data.db'
+app.config['DATABASE_URI'] = 'sqlite:///database/data.db'
 app.config['SQLALCHEMY_BINDS'] = {
     'contact': 'sqlite:///database/contact.db',
     'issuebook': 'sqlite:///database/issuebook.db'
