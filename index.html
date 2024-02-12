@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page</title>
+  
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background-image: url(static/nature.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	}
+	.main{
+		font-family: big john;
+		background-color: rgb(0,0,0,0.4);
+    width: auto;
+    height: 1378px;
+    overflow: hidden;
+	}
+	h1{
+		width: 420px;
+		height:50px;
+		margin-top: 5px;
+		margin-left: 5px;
+		color: #fff;
+		background-color: rgb(0,0,0,0.3);
+		text-align: center;
+		padding-top: 4px;
+		border: 1px solid white;
+	}
+	.cake{
+		font-family: big john;
+		font-size: 16px;
+		color: #fff;
+		margin: 10px 5px 0 5px;
+	}
+	a{
+		color: white;
+		text-decoration: none;
+	}
+	a{
+		color: white;
+		text-decoration: none;
+	}
+	.wrapper{
+	    width: 860;
+	}
+	.wrapper ul{
+		list-style: none;
+		margin-top: 2%;
+	}
+	.wrapper ul li{
+		margin-left: 430px;
+		margin-right: -430px;
+		margin-top: -230px;
+		margin-bottom: 1000px;
+		background: rgb(0,0,0,0.4);
+		width: 150px;
+		border: 1px solid #fff;
+		height: 51px;
+		line-height: 40px;
+		font-family: big john;
+		text-align: center;
+		float: left;
+		color: #fff;
+		font-size: 13px;
+		padding-bottom: 5px;
+		position: relative;
+	}
+	.wrapper ul li:hover{
+		background:crimson;
+	}
+	.wrapper ul ul{
+		display: none;
+	}
+    .wrapper ul li:hover < ul{
+    	display: block;
+    }
+    .wrapper ul ul ul{
+    	position: relative;
+    }
+    input{
+    	line-height: 30px;
+        border-radius: 6px;
+        padding: 0px 22px 0 30px;
+        font-size: 16px;
+        margin: auto;
+        position: relative;
+      left: 39%;
+      top: 50%px;
+    }
+    .btn{
+    	width: 80px;
+      height: 30px;
+      font-size: 16px;
+      font-family: big john;
+      background-color: white;
+      color: black;
+      border-radius: 20px;
+      cursor: pointer;
+      position: relative;
+      left: 45%;
+      top: 51%;
+  }
+      .btn:hover {
+  background-color:#C0C0C0 ;
+  border-radius: 20px;
+    }
+    h3{
+      font-size: 30px;
+      color: #fff;
+      font-family: big john;
+      position: relative;
+      top: -70px;
+      left: -820px;
+    }
+    .Enter{
+      width: 470px;
+      height:500px;
+      margin-top: -120px;
+      margin-left: 5px;
+      background-color: rgb(0,0,0,0.3);
+      padding-top: 20px;
+      border: 1px solid white;
+    }
+    #Set h2{
+      color: #fff;
+      position: relative;
+      top: 95px;
+      left: 30px;
+    }
+    #Get h2{
+      color: #fff;
+      position: relative;
+      top: -750px;
+      left: 30px;
+    }
+    .option{
+      position:relative;
+      left: 170px;
+      top: -800px;
+      bottom: 35px;
+      line-height: 30px;
+      width:230px;
+      height: 34px;
+      padding: 0 22px;
+      border-radius: 6px;
+      font-size: 16px;
+      color: #555;
+      text-align: center;
+      outline: none;
+      overflow: hidden;
+    }
+    .tbn{
+      position:relative;
+      left: -25px;
+      top: -710px;
+      bottom: 35px;
+      width: 80px;
+      height: 30px;
+      font-size: 16px;
+      font-family: big john;
+      background-color: white;
+      color: black;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .lower{
+      position: absolute;
+      top: 1120px;
+      border: 1px solid white;
+      background: rgb(0,0,0,0.4);
+      font-size: 18px;
+      color: white;
+      width: 14%;
+      height: 28%;
+      padding: 10px 10px 10px 25px;
+    }
+    p{
+      font-size: 25px;
+    }
+    .lower img{
+      max-height: 160px;
+      max-height: 120px;
+      position: absolute;
+      top: 60px;
+      left: 35px;
+      opacity: 95%;
+    }
+    .pro{
+      position: absolute;
+      top: 1120px;
+      left: 250px;
+      color: #fff;
+      font-size: 25px;
+      background: rgb(0,0,0,0.4);
+      border: 1px solid white;
+      width: 13%;
+      height: 28%;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+    }
+    .pro a{
+      font-size: 20px;
+      line-height: 1.6em;
+    }
+    .pro a:hover{
+    background:crimson;
+    color: white;
+  }
+    .kro{
+      position: absolute;
+      top: 1120px;
+      left: 465px;
+      color: #fff;
+      font-size: 25px;
+      background: rgb(0,0,0,0.4);
+      border: 1px solid white;
+      width: 14%;
+      height: 28.5%;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+    }
+    .kro a{
+      font-size: 20px;
+      line-height: 1.6em;
+    }
+    .kro a:hover{
+    background:crimson;
+    color: white;
+  }
+    .tro{
+      position: absolute;
+      top: 1120px;
+      left: 695px;
+      color: #fff;
+      font-size: 25px;
+      background: rgb(0,0,0,0.4);
+      border: 1px solid white;
+      width: 14%;
+      height: 28.5%;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+    }
+    .tro a{
+      line-height: 1.6em;
+      font-size: 20px;
+    }
+    .tro a:hover{
+    background:crimson;
+    color: white;
+  }
+    .fro{
+      position: absolute;
+      top: 1120px;
+      left: 925px;
+      color: #fff;
+      font-size: 25px;
+      background: rgb(0,0,0,0.4);
+      border: 1px solid white;
+      width: 14%;
+      height: 28%;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+    }
+    .fro a{
+      line-height: 1.6em;
+      font-size: 20px;
+    }
+    .fro a:hover{
+    background:crimson;
+    color: white;
+  }
+    .bro{
+      position: absolute;
+      top: 1120px;
+      left: 1155px;
+      color: #fff;
+      font-size: 25px;
+      background: rgb(0,0,0,0.4);
+      border: 1px solid white;
+      width: 12%;
+      height: 28%;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+    }
+    .bro a{
+      line-height: 1.6em;
+      font-size: 20px;
+    }
+    .bro a:hover{
+    background:crimson;
+    color: white;
+  }
+  .layout{
+    color: #fff;
+    background: rgb(0,0,0,0.4);
+    width: 500px;
+    height: 502px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid white;
+    position: relative;
+    top: -1260px;
+    left: 815px;
+    padding: 10px;
+  }
+  img{
+    max-height: 400px;
+    max-height: 400px;
+    position: relative;
+    top: -1750px;
+    left: 880px;
+  }
+  .read{
+    font-size: 18px;
+    color: white;
+    position: relative;
+    left: 880px;
+    top: -1300px;
+  }
+  .yuno{
+    color: white;
+    font-size: 18px;
+    font-family: big john;
+    background:rgb(0,0,0,0.4);
+    width: 270px;
+    height: 200px;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    border: 1px solid white;
+    position: relative;
+    top: -2130px;
+    left: 493px;
+    line-height: 1.4em;
+  }
+  .light{
+    color:#fff;
+    font-size: 18px;
+    background:rgb(0,0,0,0.4);
+    border: 1px solid white;
+    padding: 15px 15px 15px 15px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    top: -2118px;
+    left: 493px;
+    line-height: 1.3em;
+  }
+  .light a:hover{
+    background:crimson;
+    color: white;
+  }
+  .ray{
+    color: white;
+    font-family: big john;
+    background: rgb(0,0,0,0.6);
+    width: 1335px;
+    position: relative;
+    top: -1450px;
+  }
+  .info{
+    font-size: 25px;
+    font-family: big john;
+    color: #fff;
+    background: rgb(0,0,0,0.4);
+    width: 400px;
+    border: 1px solid white;
+    position: relative;
+    top:-2160px;
+    left:1px;
+    padding: 10px 10px 10px 10px;
+  }
+  .info a{
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  .info a:hover{
+    background: crimson;
+    color: white;
+  }
+  .tinfo{
+    font-size: 25px;
+    font-family: big john;
+    color: #fff;
+    background: rgb(0,0,0,0.4);
+    width: 400px;
+    border: 1px solid white;
+    position: relative;
+    top:-2150px;
+    left:1px;
+    padding: 10px 10px 10px 10px;
+  }
+  .tinfo a{
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  .tinfo a:hover{
+    background: crimson;
+    color: white;
+  }
+  .binfo{
+    font-size: 25px;
+    font-family: big john;
+    color: #fff;
+    background: rgb(0,0,0,0.4);
+    width: 400px;
+    border: 1px solid white;
+    position: relative;
+    top:-2452px;
+    left:460px;
+    padding: 10px 10px 10px 10px;
+  }
+  .binfo a{
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  .binfo a:hover{
+    background: crimson;
+    color: white;
+  }
+  .kinfo{
+    font-size: 25px;
+    font-family: big john;
+    color: #fff;
+    background: rgb(0,0,0,0.4);
+    width: 400px;
+    border: 1px solid white;
+    position: relative;
+    top:-2442px;
+    left:460px;
+    padding: 10px 10px 10px 10px;
+  }
+  .kinfo a{
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  .kinfo a:hover{
+    background: crimson;
+    color: white;
+  }
+  .linfo{
+    font-size: 25px;
+    font-family: big john;
+    color: #fff;
+    background: rgb(0,0,0,0.4);
+    width: 400px;
+    border: 1px solid white;
+    position: relative;
+    top:-2744px;
+    left:915px;
+    padding: 10px 10px 10px 10px;
+  }
+  .linfo a{
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  .linfo a:hover{
+    background: crimson;
+    color: white;
+  }
+  .sinfo{
+    font-size: 25px;
+    font-family: big john;
+    color: #fff;
+    background: rgb(0,0,0,0.4);
+    width: 400px;
+    border: 1px solid white;
+    position: relative;
+    top:-2734px;
+    left:915px;
+    padding: 10px 10px 10px 10px;
+  }
+  .sinfo a{
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  .sinfo a:hover{
+    background: crimson;
+    color: white;
+  }
+  .notice{
+    font-size: 22px;
+    color: #fff;
+    background: rgb(0,0,0,0.4);
+    border: 1px solid white;
+    width: 1335px;
+    height: 100px;
+    position: relative;
+    top:-2720px;
+    left:2px;
+  }
+  .notice n{
+    font-size: 20px;
+    font-weight: none;
+  }
+</style>
+<body>
+  <div class="main">
+  	<div><h1>ReadHub Online Library</h1></div><br>
+    <div class="cake"> Welcome to Readhub online Library. Here, we provide our user with vast variety of books of their choice. We give our users the top notch elegance and user-friendly reading environment. Welcome aboard and enjoy your read. We wish you may have a great experience with our reading platform and if possible probide us a feedback.</div><br>
+    <input type="Text" name=""><br>
+    <button class="btn">Enter</button>
+    <div class=wrapper>
+    	<nav>
+    	<ul>
+    		<li><a href="home">Home</a></li>
+    		<li><a href="/preIssueBook">Issue Books</a></li>
+    		    <ul>
+    		    	<li><a href="#">Profile</a></li>
+    		    	<li><a href="#">My books</a></li>
+    		    	<li><a href="#">Favorites</a></li>
+    		    	<li><a href="#">Notifications</a></li>
+    		    	<li><a href="#">Privacy</a></li>
+    		    </ul>
+    		<li><a href="Contact">Contact</a></li>
+    		<li><a href="#">Site Settings</a></li>
+    		<li><a href="#">Help</a></li>
+    		<li><a href="/logout">Logout</a></li>
+    	</ul>
+    	</nav>
+    </div>
+            <h3>Find Your Book Here:</h3>
+            <div class="Enter">
+    	<div id="Set"><h2>Genre :</h2><br>
+            <select class="option" name="Search:">
+              <option>--Select--</option>
+              <option>Action</option>
+              <option>Drama</option>
+              <option>Romance</option>
+              <option>Thriller</option>
+              <option>Education</option>
+              <option>Religious</option>
+              <option>History</option>
+              <option>Geography</option>
+              <option>Civil</option>
+              <option>Science</option>
+              <option>Business</option>
+              <option>Technology</option>
+              <option>Comics</option>
+              <option>Encyclopedia</option>
+            </select>
+      <div id="Get"><h2>Year :</h2><br>
+            <select class="option" name="Search:">
+            	<option>--Select--</option>
+            	<option>1980</option>
+            	<option>1981</option>
+            	<option>1982</option>
+            	<option>1983</option>
+            	<option>1984</option>
+            	<option>1985</option>
+            	<option>1958</option>
+            	<option>1986</option>
+            	<option>1987</option>
+            	<option>1988</option>
+            	<option>1989</option>
+            	<option>1990</option>
+            	<option>1991</option>
+            	<option>1992</option>
+            	<option>1993</option>
+            	<option>1994</option>
+            	<option>1995</option>
+            	<option>1996</option>
+            	<option>1997</option>
+            	<option>1998</option>
+            	<option>1999</option>
+            	<option>2000</option>
+            	<option>2001</option>
+            	<option>2002</option>
+            	<option>2003</option>
+            	<option>2004</option>
+            	<option>2005</option>
+            	<option>2006</option>
+            	<option>2007</option>
+            	<option>2008</option>
+            	<option>2009</option>
+            	<option>2010</option>
+            	<option>2011</option>
+            	<option>2012</option>
+            	<option>2013</option>
+            	<option>2014</option>
+            	<option>2015</option>
+            	<option>2016</option>
+            	<option>2017</option>
+            	<option>2018</option>
+            	<option>2019</option>
+            	<option>2020</option>
+            </select><br>
+      <div id="Hat"><h2>Author :</h2><br>
+            <select class="option" name="Search:"><br>
+            	<option>--Select--</option>
+            	<option>William Shakespeare</option>
+            	<option>Emily Dickinson</option>
+            	<option>H P lovecraft</option>
+            	<option>Arthur Conan Doyle</option>
+            	<option>Leo Tolstoy</option>
+            	<option>Edgar Allan Poe</option>
+            	<option>Robert Ervin Howard</option>
+            	<option>Rabindranath Tagore</option>
+            	<option>Rudyard Kipling</option>
+            	<option>Seneca</option>
+            	<option>John Donne</option>
+            	<option>Sarah Williams</option>
+            	<option>Oscar Wilde</option>
+            	<option>Catullus</option>
+            	<option>Alfred Tennyson</option>
+            	<option>Charles Dickens</option>
+            	<option>John Keats</option>
+            	<option>Barack Obama</option>
+            	<option>Abraham Lincoln</option>
+            	<option>Aristotle</option>
+            	<option>O Henry</option>
+            	<option>Robert Frost</option>
+            	<option>Plato</option>
+            	<option>R S Agarwal</option>
+            	<option>Margaret Thatcher</option>
+            	<option>J K Rowling</option>
+            	<option>T S Eliot</option>
+            	<option>H G Wells</option>
+            	<option>Julius Caesar</option>
+            	<option>Bret Harte</option>
+            	<option>Mark Twen</option>
+            	<option>Saki</option>
+            	<option>Charles Darwin</option>
+            	<option>Bertrand Russell</option>
+            </select>
+      <div id="Bet"><h2>Price/Rent:</h2><br>
+            <select class="option" name="Search:">
+              <option>--Select--</option>
+              <option>0-250(Rs)</option>
+              <option>250-500(Rs)</option>
+              <option>500-750(Rs)</option>
+              <option>750-900(Rs)</option>
+              <option>900-1150(Rs)</option>
+              <option>More Than 1150(Rs)</option>
+            </select>
+              <button class="tbn">Search</button>
+          </div><br>
+          <div class="lower">
+           <p>ReadHub Library <img src="static\logo.jpg"></p></div>
+           <div class="pro">
+            PROFILE<br>
+            <a href="#">Account</a><br>
+            <a href="#">Recent reads</a><br>
+            <a href="#">Favorites</a><br>
+            <a href="#">My books</a><br>
+            <a href="#">Issued books</a></div><br>
+           <div class="kro">
+            SETTINGS<br>
+            <a href="#">Page settings</a><br>
+            <a href="#">History</a><br>
+            <a href="#">Bookmarks</a><br>
+            <a href="#">Accessibility</a><br>
+            <a href="#">Privacy</a></div><br>
+           <div class="tro">
+            CONTACT-US<br>
+            <a href="https://www.123formbuilder.com/form-5655868/">E-mail us</a><br>
+            <a href="#">Message us</a><br>
+            <a href="#">Twitter</a><br>
+            <a href="#">Instagram</a><br>
+            <a href="#">Facebook</a></div>
+             <div class="fro">
+            HELP<br>
+            <a href="#">E-mail help</a><br>
+            <a href="#">Password help</a><br>
+            <a href="#">Username help</a><br>
+            <a href="#">Security</a><br>
+            <a href="#">Authenticate</a></div>
+             <div class="bro">
+            FAQs<br>
+            <a href="#">How to sign up</a><br>
+            <a href="#">Book issue</a><br>
+            <a href="#">Rent book</a><br>
+            <a href="#">Return book</a><br>
+            <a href="#">Other FAQs..</a></div>
+          </div><br>
+      <div class="layout">Latest Trending</div>
+      <div class="read">Must Read for 2020 latest published
+      <a href="#">Click Here To Read</a></div>
+      <img src="https://images.unsplash.com/photo-1548048026-5a1a941d93d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"><br>
+    <div class="yuno">NOTICE:<br>Users can issue the book 24x7<br>User can buy/rent books<br>User can search book with filters<br>Fine will be imposed on late return of book<br>No fine for on/before time return of book<br>
+    </div><br>
+    <div class="light">TOP READS:<br>
+      <a href="#">Action Top 20 books to read</a><br>
+      <a href="#">Thriller Top 20 books to read</a><br>
+      <a href="#">Romance Top 20 books to read</a><br>
+      <a href="#">Mystery Top 20 books to read</a><br>
+      <a href="#">Horror Top 20 books to read</a><br>
+      <a href="#">Fiction Top 20 books to read</a><br>
+    </div><br>
+    <div class="ray"><marquee>WARNING: The users are requested to do not copy the contents of the page as this is a serious illegal crime under the copyright act of 2008. So we kindly insist our users to do not copy anything from this page. Thank you and enjoy your read.
+      </marquee>
+    </div><br>
+    <div class="info">Instant Reading Books : (Coding)<br>
+        <a href="#">Introduction to Internet Programming</a><br>
+        <a href="#">Introduction to HTML(Beginners)</a><br>
+        <a href="#">Introduction to CSS(Beginners)</a><br>
+      </div>
+      <div class="tinfo">Instant Reading Books : (Mystery)<br>
+        <a href="#">The Gone Girl</a><br>
+        <a href="#">In Cold Blood</a><br>
+        <a href="#">Woman In White</a><br>
+      </div>
+      <div class="binfo">Instant Reading Books : (Horror)<br>
+        <a href="#">Gothic Tales</a><br>
+        <a href="#">Autopsy of Jane Doe</a><br>
+        <a href="#">Haunting of HillHouse</a><br>
+      </div>
+      <div class="kinfo">Instant Reading Books : (Action)<br>
+        <a href="#">Black Sun</a><br>
+        <a href="#">The Night Manager</a><br>
+        <a href="#">Oath of Office</a><br>
+      </div>
+      <div class="linfo">Instant Reading Books : (Thriller)<br>
+        <a href="#">Watching You</a><br>
+        <a href="#">The Night of 16 December</a><br>
+        <a href="#">The Abduction</a><br>
+      </div>
+      <div class="sinfo">Instant Reading Books : (Drama)<br>
+        <a href="#">Then She Was Gone</a><br>
+        <a href="#">Another Love</a><br>
+        <a href="#">Small Great Things</a><br>
+      </div>
+      <div class="notice">ATTENTION :<br><n>
+        Attention to all our prestigeous users here on our website there's going to be a <U>BOOKFEST 2020</U> in forthcoming month. In this fest a contest will be held for the best short book written by our valuable users. And the best book with the best story will awarded with a special giveaway. So stay tuned for the bookfest.</n>
+      </div>
+  </div>
+</body>
+</html>
